@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06604C111DC1A88E0083C4A6 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 06604C101DC1A88E0083C4A6 /* Vehicle.m */; };
+		06604C131DC1A91A0083C4A6 /* Chapter4.m in Sources */ = {isa = PBXBuildFile; fileRef = 06604C121DC1A91A0083C4A6 /* Chapter4.m */; };
+		06604C161DC1A9560083C4A6 /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = 06604C151DC1A9560083C4A6 /* Complex.m */; };
+		06604C191DC1A9900083C4A6 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 06604C181DC1A9900083C4A6 /* Rectangle.m */; };
 		06E9C2CA1DC1A0AC002C357F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E9C2C91DC1A0AC002C357F /* main.m */; };
+		06E9C2D21DC1A159002C357F /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E9C2D11DC1A159002C357F /* Fruit.m */; };
+		06E9C2D51DC1A424002C357F /* Exam.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E9C2D41DC1A424002C357F /* Exam.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06604C0F1DC1A88E0083C4A6 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		06604C101DC1A88E0083C4A6 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		06604C121DC1A91A0083C4A6 /* Chapter4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter4.m; sourceTree = "<group>"; };
+		06604C141DC1A9560083C4A6 /* Complex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Complex.h; sourceTree = "<group>"; };
+		06604C151DC1A9560083C4A6 /* Complex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Complex.m; sourceTree = "<group>"; };
+		06604C171DC1A9900083C4A6 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		06604C181DC1A9900083C4A6 /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
 		06E9C2C61DC1A0AC002C357F /* iOS-Study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "iOS-Study"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E9C2C91DC1A0AC002C357F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06E9C2D01DC1A159002C357F /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
+		06E9C2D11DC1A159002C357F /* Fruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fruit.m; sourceTree = "<group>"; };
+		06E9C2D31DC1A424002C357F /* Exam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exam.h; sourceTree = "<group>"; };
+		06E9C2D41DC1A424002C357F /* Exam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exam.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +55,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06604C0E1DC1A85B0083C4A6 /* Objc-Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				06604C0F1DC1A88E0083C4A6 /* Vehicle.h */,
+				06604C101DC1A88E0083C4A6 /* Vehicle.m */,
+				06604C121DC1A91A0083C4A6 /* Chapter4.m */,
+				06604C141DC1A9560083C4A6 /* Complex.h */,
+				06604C151DC1A9560083C4A6 /* Complex.m */,
+				06604C171DC1A9900083C4A6 /* Rectangle.h */,
+				06604C181DC1A9900083C4A6 /* Rectangle.m */,
+			);
+			name = "Objc-Exercise";
+			sourceTree = "<group>";
+		};
 		06E9C2BD1DC1A0AC002C357F = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +88,12 @@
 		06E9C2C81DC1A0AC002C357F /* iOS-Study */ = {
 			isa = PBXGroup;
 			children = (
+				06604C0E1DC1A85B0083C4A6 /* Objc-Exercise */,
 				06E9C2C91DC1A0AC002C357F /* main.m */,
+				06E9C2D01DC1A159002C357F /* Fruit.h */,
+				06E9C2D11DC1A159002C357F /* Fruit.m */,
+				06E9C2D31DC1A424002C357F /* Exam.h */,
+				06E9C2D41DC1A424002C357F /* Exam.m */,
 			);
 			path = "iOS-Study";
 			sourceTree = "<group>";
@@ -119,6 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06604C111DC1A88E0083C4A6 /* Vehicle.m in Sources */,
+				06604C191DC1A9900083C4A6 /* Rectangle.m in Sources */,
+				06E9C2D51DC1A424002C357F /* Exam.m in Sources */,
+				06E9C2D21DC1A159002C357F /* Fruit.m in Sources */,
+				06604C131DC1A91A0083C4A6 /* Chapter4.m in Sources */,
+				06604C161DC1A9560083C4A6 /* Complex.m in Sources */,
 				06E9C2CA1DC1A0AC002C357F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +288,7 @@
 				06E9C2CF1DC1A0AC002C357F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
