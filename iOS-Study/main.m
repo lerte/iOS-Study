@@ -11,7 +11,7 @@
 #import "Vehicle.h"
 #import "Complex.h"
 #import "Rectangle.h"
-#import "Exam.h"
+#import "Person.h"
 
 
 void runExercise()
@@ -76,27 +76,24 @@ void runExercise()
 //
 //}
 
-void getProcessTree() {
-    Process* s1 = [[Process alloc] initWithName:@"iPhone7 Simulator" children:@[ [[Process alloc] initWithName:@"iPhone777 Simulator" children:nil]]];
-    Process* s2 = [[Process alloc] initWithName:@"iPhone6 Simulator" children:nil];
-    Process* xcode = [[Process alloc] initWithName:@"Xcode"
-                                          children:@[[[Process alloc] initWithName:@"Simulator" children:@[s1,s2]],[[Process alloc] initWithName:@"Debugger" children:nil],[[Process alloc] initWithName:@"Debugger2" children:nil]]];
-    Process* finder = [[Process alloc] initWithName:@"Finder" children:nil];
-    Process* qq = [[Process alloc] initWithName:@"QQ" children:nil];
-    Process* launcher = [[Process alloc] initWithName:@"Launcher" children:@[xcode, finder, qq]];
-    
-    //NSLog(@"%@", [launcher dump]);
-    NSLog(@"%@", [xcode initFromDumpString:[xcode dump]]);
+
+
+void getPersonTree(){
+    Person* iPhone7Simulator = [[Person alloc] initWithName:@"iPhone7Simulator" children:nil];
+    Person* xcode = [[Person alloc] initWithName:@"Xcode" children:@[[[Person alloc] initWithName:@"Simulator" children:@[iPhone7Simulator]],[[Person alloc] initWithName:@"Debugger" children:nil]]];
+    Person* finder = [[Person alloc] initWithName:@"Finder" children:nil];
+    Person* qq2016 = [[Person alloc] initWithName:@"QQ2016" children:nil];
+    Person* qq = [[Person alloc] initWithName:@"QQ" children:@[qq2016]];
+    Person* launcher = [[Person alloc] initWithName:@"Launcher" children:@[xcode, finder, qq]];
+    NSLog(@"%@", [launcher dump]);
+    Person * p = [launcher initFromDumpString:[launcher dump]];
+    NSLog(@"%@", [p dump]);
     
 }
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        //runExercise();
-        Fruit* f = [[Fruit alloc]init];
-        NSArray* na = [f sorted:@[@4,@9,@5,@10,@6,@0,@3,@8,@1,@7,@2]];
-        //NSLog(@"the result is %@",na);
-        getProcessTree();
+        getPersonTree();
     }
     return 0;
 }
